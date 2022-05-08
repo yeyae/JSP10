@@ -1,0 +1,26 @@
+AJAX
+(Asynchronous Javascript and xml , 에이잭스)
+url로 요청을 보내서 데이터를 받아오기 위해 사용
+비동기 방식
+
+$.ajax({옵션});
+$.ajax({
+	url : "전송요청url",
+	type: "전송방식 get or post",
+	data: "전송할 data",
+	dataType : "요청데이터 타입(html,xml,json,text)",
+	success : function(result) {
+		// 요청이 제대로 전달되었을때 실행하는 함수
+	},
+	error : function() {
+		// 요청이 실패했을때 실행하는 함수
+	}
+});
+
+JSON (Javscript Object Nation)
+: 자바스크립트 객체 표기법
+{
+	"key1" : value,
+	"key2" : value2,
+	"key3" : [{k:v}]
+}
